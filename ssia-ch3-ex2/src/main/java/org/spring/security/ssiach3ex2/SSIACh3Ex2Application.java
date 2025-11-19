@@ -1,16 +1,13 @@
-package org.spring.security.ssiach2ex3;
+package org.spring.security.ssiach3ex2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.List;
-import java.util.stream.Stream;
-
 @SpringBootApplication
-public class SSIACh2Ex3Application {
+public class SSIACh3Ex2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SSIACh2Ex3Application.class, args);
+        SpringApplication.run(SSIACh3Ex2Application.class, args);
     }
 
 }

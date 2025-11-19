@@ -8,13 +8,14 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.provisioning.UserDetailsManager;
 
 @Configuration
 public class UserManagementConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager _userDetailsService = new InMemoryUserDetailsManager();
+        UserDetailsManager _userDetailsService = new InMemoryUserDetailsManager();
 
         UserDetails user = User.withUsername("hula@nm0")
                 .password("12345")
